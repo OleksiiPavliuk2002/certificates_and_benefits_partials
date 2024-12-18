@@ -1,1 +1,3 @@
-# certificates_and_benefits_partials
+# Certificates and Benefits partials
+
+These are partials, which i used in team project
