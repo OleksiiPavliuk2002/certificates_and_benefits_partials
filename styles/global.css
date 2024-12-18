@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* -------- COLORS -------- */
+
+  --primary-970: #21273629;
+  --primary-950: #223f3c;
+  --primary-900: #325956;
+  --primary-800: #577270eb;
+  --primary-700: #668280;
+  --primary-600: #cdd5b399;
+  --primary-500: #90a48d;
+  --primary-400: #a0b098;
+  --primary-300: #c0cba5;
+  --primary-200: #c8d2af;
+  --primary-100: #f1e7e1;
+  --primary-000: #ffffff;
+
+  --pink-900: #3716466e;
+  --pink-800: #7d318aa3;
+  --pink-700: #7d318a;
+  --pink-600: #82498b;
+  --pink-500: #6a3b73;
+  --pink-400: #edc8e5;
+  --pink-300: #f9e9f0;
+  --pink-200: #f1e6e1;
+  --pink-100: #f3d7ea;
+
+  --yellow-500: #9b8f2230;
+  --yellow-400: #9b8f22ad;
+  --yellow-300: #9b8f22b8;
+  --yellow-200: #a39135;
+  --yellow-100: #f6f2d3;
+
+  --cream-100: #f7efea;
+
+  --blue-500: #34b4fb;
+
+  --red-500: #d04033;
+
+  --goldenrod-500: #c7964d;
+  --lavender-500: #9f7ba0;
+  --amber-500: #d0943b;
+  --mustard-400: #a39135;
+  --olive-400: #b8af5b;
+  --peach-400: #d7a55c;
+  --beige-100: #f9f3ee;
+
+  /* -------- VARIABLES -------- */
+
+  --header-bg-color: var(--primary-300);
+  --header-burger-color: var(--primary-900);
+  --header-burger-hover-color: var(--primary-700);
+  --header-order-button-bg-color: var(--primary-900);
+  --header-order-button-bg-hover-color: var(--primary-950);
+  --header-nav-menu-text-color: var(--primary-800);
+  --header-nav-menu-hover-text-color: var(--primary-900);
+  --header-hero-title-text-color: var(--primary-900);
+  --header-hero-subtitle-text-color: var(--primary-800);
+  --header-hero-content-text-color: var(--primary-700);
+  --header-hero-content-price-text-color: var(--primary-900);
+  --order-button-text-color: var(--primary-100);
+  --contacts-body-background-color: #c8d1af;
+
+  --basket-border-color: var(--pink-400);
+  --basket-bg-color: var(--primary-000);
+  --basket-counter-text-color: var(--primary-100);
+  --basket-counter-bg-color: var(--primary-200);
+  --basket-box-shadow-color: var(--primary-970);
+
+  --skin-bg-color: var(--primary-900);
+  --skin-title-color: var(--primary-200);
+  --skin-content-color: var(--primary-600);
+
+  --certificates-bg-color: var(--primary-200);
+  --certificates-title-color: var(--primary-900);
+  --certificates-countries-color: var(--primary-800);
+  --certificates-ingredients-color: var(--primary-700);
+  --certificates-arrow-left-block-color: var(--primary-900);
+  --certificates-arrow-left-color: var(--primary-100);
+  --certificates-arrow-right-block-color: var(--primary-900);
+  --certificates-arrow-right-color: var(--primary-100);
+
+  --benefits-bg-color: var(--yellow-100);
+  --benefits-left-side-title-color: var(--yellow-200);
+  --benefits-left-side-paragraph-higher-color: var(--yellow-300);
+  --benefits-left-side-paragraph-lower-color: var(--yellow-400);
+  --benefits-title-color: var(--yellow-200);
+  --benefits-paragraph-color: var(--yellow-400);
+  --benefits-circle-color: var(--yellow-500);
+
+  --products-box-bg-color: var(--pink-200);
+  --products-box-title-color: var(--primary-900);
+  --products-box-subtitle-color: var(--primary-900);
+  --products-box-slide-bg-color: var(--beige-100);
+  --products-box-carousel-text-title-color: var(--goldenrod-500);
+  --products-box-carousel-text-product-name-color: var(--primary-900);
+  --products-box-carousel-text-product-description-color: var(--primary-700);
+  --products-box-carousel-text-charact-name-color: var(--goldenrod-500);
+  --products-box-carousel-text-charact-description-color: var(--primary-700);
+  --products-box-carousel-accordion-summury: var(--goldenrod-500);
+  --products-box-carousel-accordion-text: var(--primary-700);
+
+  --steps-of-using-bg-color: var(--pink-200);
+  --steps-of-using-title-brown: var(--mustard-400);
+  --steps-of-using-title-green: var(--primary-900);
+  --steps-of-using-title-orange: var(--amber-500);
+  --steps-of-using-title-purple: var(--pink-700);
+  --steps-of-using-description-brown: var(--olive-400);
+  --steps-of-using-description-green: var(--primary-700);
+  --steps-of-using-description-orange: var(--peach-400);
+  --steps-of-using-description-purple: var(--lavender-500);
+
+  --cart-bg-color: var(--pink-200);
+  --cart-overlay-bg-color: rgba(0, 0, 0, 0.7);
+  --cart-header-color: var(--primary-900);
+  --cart-button-hover-color: var(--primary-950);
+  --cart-quantity-input-border-color: var(--primary-200);
+  --cart-input-label-required-color: var(--red-500);
+  --cart-input-placeholder-color: var(--primary-300);
+  --cart-input-bg-color: var(--cream-100);
+  --cart-input-focus-outline-color: var(--blue-500);
+
+  --primary-font-family: "Chivo", sans-serif;
+  --secondary-font-family: "Istok Web", sans-serif;
+  --default-font-family: "Times New Roman", Times, serif;
+
+  font-family: var(--primary-font-family);
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
